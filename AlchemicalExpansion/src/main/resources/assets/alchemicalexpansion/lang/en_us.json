@@ -1,6 +1,9 @@
 {
   "item.alchemicalexpansion.alchemical_bolus": "Alchemical Bolus",
   "item.alchemicalexpansion.essence_container": "Essence Container",
+  "item.alchemicalexpansion.belladonna": "Belladonna",
+
+  "block.alchemicalexpansion.belladonna_plant": "Belladonna Plant",
 
   "creativetab.alchemical_expansion_tab": "Alchemical Expansion"
 }

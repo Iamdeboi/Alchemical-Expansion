@@ -1,6 +1,6 @@
-package com.iamdeboi.alchemicalexpansion.item;
+package net.iamdeboi.alchemicalexpansion.item;
 
-import com.iamdeboi.alchemicalexpansion.AlchemicalExpansion;
+import net.iamdeboi.alchemicalexpansion.AlchemicalExpansion;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -14,6 +14,8 @@ public class ModItems {
     public static final RegistryObject<Item> ALCHEMICAL_BOLUS = ITEMS.register("alchemical_bolus",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> ESSENCE_CONTAINER = ITEMS.register("essence_container",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> BELLADONNA = ITEMS.register("belladonna",
             () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {

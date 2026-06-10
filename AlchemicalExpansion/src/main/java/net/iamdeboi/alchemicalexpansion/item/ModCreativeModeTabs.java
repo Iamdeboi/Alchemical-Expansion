@@ -1,6 +1,7 @@
-package com.iamdeboi.alchemicalexpansion.item;
+package net.iamdeboi.alchemicalexpansion.item;
 
-import com.iamdeboi.alchemicalexpansion.AlchemicalExpansion;
+import net.iamdeboi.alchemicalexpansion.AlchemicalExpansion;
+import net.iamdeboi.alchemicalexpansion.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -19,7 +20,9 @@ public class ModCreativeModeTabs {
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.ALCHEMICAL_BOLUS.get());
                         pOutput.accept(ModItems.ESSENCE_CONTAINER.get());
+                        pOutput.accept(ModItems.BELLADONNA.get());
 
+                        pOutput.accept(ModBlocks.BELLADONNA_PLANT.get());
 
                     })
                     .build());
