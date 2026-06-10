@@ -1,6 +1,10 @@
 package com.iamdeboi.alchemicalexpansion;
 
+import com.iamdeboi.alchemicalexpansion.item.ModCreativeModeTabs;
+import com.iamdeboi.alchemicalexpansion.item.ModItems;
 import com.mojang.logging.LogUtils;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -23,6 +27,12 @@ public class AlchemicalExpansion {
     public AlchemicalExpansion(FMLJavaModLoadingContext context) {
         IEventBus modEventBus = context.getModEventBus();
 
+        //Register Creative Mode Tab for the mod
+        ModCreativeModeTabs.register(modEventBus);
+
+        // Register ModItem Registry
+        ModItems.register(modEventBus);
+
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
@@ -34,8 +44,12 @@ public class AlchemicalExpansion {
 
     }
 
+    // Add the example block item to the building blocks tab
     private void addCreative (BuildCreativeModeTabContentsEvent event) {
-
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.ALCHEMICAL_BOLUS);
+            event.accept(ModItems.ESSENCE_CONTAINER);
+        }
     }
 
     @SubscribeEvent
