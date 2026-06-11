@@ -16,11 +16,15 @@ public class ModBlockStateProvider extends BlockStateProvider {
     @Override
     protected void registerStatesAndModels() {
         blockWithItem(ModBlocks.ALEMBIC_BLOCK);
-        blockWithItem(ModBlocks.BELLADONNA_PLANT);
+
+        simpleBlockWithItem(ModBlocks.BELLADONNA_PLANT.get(), models().cross(blockTexture(ModBlocks.BELLADONNA_PLANT.get()).getPath(),
+                blockTexture(ModBlocks.BELLADONNA_PLANT.get())).renderType("cutout"));
     }
 
     // Pass Registry object block --> registers custom full block and its associated item
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
         simpleBlockWithItem(blockRegistryObject.get(), cubeAll((blockRegistryObject.get())));
     }
+
+
 }

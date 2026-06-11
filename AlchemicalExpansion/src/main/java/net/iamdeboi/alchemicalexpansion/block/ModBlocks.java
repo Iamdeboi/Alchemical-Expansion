@@ -3,6 +3,7 @@ package net.iamdeboi.alchemicalexpansion.block;
 import net.iamdeboi.alchemicalexpansion.AlchemicalExpansion;
 import net.iamdeboi.alchemicalexpansion.block.custom.AlembicBlock;
 import net.iamdeboi.alchemicalexpansion.item.ModItems;
+import net.minecraft.client.resources.model.Material;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
@@ -29,7 +30,7 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> BELLADONNA_PLANT = registerBlock("belladonna_plant",
             () -> new FlowerBlock(() -> MobEffects.POISON, 5,
-    BlockBehaviour.Properties.copy(Blocks.ALLIUM).noOcclusion().noCollission()));
+    BlockBehaviour.Properties.copy(Blocks.DEAD_BUSH).noOcclusion().noCollission()));
 
     public static final RegistryObject<Block> ALEMBIC_BLOCK = registerBlock("alembic_block",
             () -> new AlembicBlock(BlockBehaviour.Properties.copy(Blocks.COPPER_BLOCK).sound(SoundType.GLASS)));
