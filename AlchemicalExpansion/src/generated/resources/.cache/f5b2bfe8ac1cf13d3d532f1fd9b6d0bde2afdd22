@@ -1,0 +1,10 @@
+// 1.20.1	2026-06-11T13:47:41.7680844	Tags for minecraft:block mod id alchemicalexpansion
+90df1fa4d5f07550143fdba5054d61cb2ec122ad data/alchemicalexpansion/tags/blocks/herbalism_eligible_plants.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/forge/tags/blocks/needs_netherite_tool.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/blocks/mineable/axe.json
+922102dc5390e352ef8bbfe941ca3607e16bacb8 data/minecraft/tags/blocks/mineable/hoe.json
+3d4a71ac105721531de59c62de63698eadd37bc5 data/minecraft/tags/blocks/mineable/pickaxe.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/blocks/mineable/shovel.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/blocks/needs_diamond_tool.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/blocks/needs_iron_tool.json
+3d4a71ac105721531de59c62de63698eadd37bc5 data/minecraft/tags/blocks/needs_stone_tool.json
