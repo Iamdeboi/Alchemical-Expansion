@@ -32,7 +32,7 @@ public class ModBlocks {
     BlockBehaviour.Properties.copy(Blocks.ALLIUM).noOcclusion().noCollission()));
 
     public static final RegistryObject<Block> ALEMBIC_BLOCK = registerBlock("alembic_block",
-            () -> new AlembicBlock(BlockBehaviour.Properties.copy(Blocks.CRAFTING_TABLE).sound(SoundType.GLASS)));
+            () -> new AlembicBlock(BlockBehaviour.Properties.copy(Blocks.COPPER_BLOCK).sound(SoundType.GLASS)));
 
 
 

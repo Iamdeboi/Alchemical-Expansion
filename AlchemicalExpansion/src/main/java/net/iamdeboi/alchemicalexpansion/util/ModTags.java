@@ -21,7 +21,6 @@ public class ModTags {
     }
 
     public static class Items {
-        public static final TagKey<Item> ALCHEMICAL_INGREDIENTS = tag("alchemical_ingredients");
 
         private static TagKey<Item> tag(String name){
             return ItemTags.create(Objects.requireNonNull(ResourceLocation.tryBuild(AlchemicalExpansion.MODID, name)));
