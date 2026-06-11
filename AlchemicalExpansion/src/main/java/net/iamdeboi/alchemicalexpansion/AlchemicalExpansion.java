@@ -47,11 +47,14 @@ public class AlchemicalExpansion {
 
     // Add the example block item to the building blocks tab
     private void addCreative (BuildCreativeModeTabContentsEvent event) {
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.ALCHEMICAL_BOLUS);
-            event.accept(ModItems.ESSENCE_CONTAINER);
-            event.accept(ModItems.BELLADONNA);
-        }
+        //if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            //event.accept(ModItems.ALCHEMICAL_BOLUS);
+            //event.accept(ModItems.ESSENCE_CONTAINER);
+            //event.accept(ModItems.BELLADONNA);
+
+            //event.accept(ModBlocks.ALEMBIC_BLOCK);
+            //event.accept(ModBlocks.BELLADONNA_PLANT);
+        //}
     }
 
     @SubscribeEvent
