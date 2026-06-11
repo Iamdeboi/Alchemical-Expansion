@@ -3,6 +3,7 @@ package net.iamdeboi.alchemicalexpansion.datagen;
 import net.iamdeboi.alchemicalexpansion.AlchemicalExpansion;
 import net.iamdeboi.alchemicalexpansion.block.ModBlocks;
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -18,6 +19,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.ALEMBIC_BLOCK);
 
         simpleBlockWithItem(ModBlocks.BELLADONNA_PLANT.get(), models().cross(blockTexture(ModBlocks.BELLADONNA_PLANT.get()).getPath(),
+                blockTexture(ModBlocks.BELLADONNA_PLANT.get())).renderType("cutout"));
+
+        simpleBlockWithItem(ModBlocks.POTTED_BELLADONNA.get(), models().singleTexture("potted_belladonna_plant", ResourceLocation.tryParse("flower_pot_cross"), "plant",
                 blockTexture(ModBlocks.BELLADONNA_PLANT.get())).renderType("cutout"));
     }
 

@@ -1,7 +1,10 @@
-// 1.20.1	2026-06-11T15:59:52.193425	Block States: alchemicalexpansion
+// 1.20.1	2026-06-11T16:13:49.0800254	Block States: alchemicalexpansion
 b0e134f5048c94ffd74ee7a97a82ce076004dcde assets/alchemicalexpansion/blockstates/alembic_block.json
 5585e2c524c007cc0a417f3481801e7f4655e027 assets/alchemicalexpansion/blockstates/belladonna_plant.json
+475c5e168320c9d225a6d3df3527a71c40043b58 assets/alchemicalexpansion/blockstates/potted_belladonna_plant.json
 b36cdeb044b81da6fd09e5a6ae4a9796326f7c70 assets/alchemicalexpansion/models/block/alembic_block.json
 69b2815225e1407872f5cd470705864895485a86 assets/alchemicalexpansion/models/block/belladonna_plant.json
+dbfb02a0f08db784c5e4d7b4db7d1266d032836b assets/alchemicalexpansion/models/block/potted_belladonna_plant.json
 cca151256ca5455a5651d8b18062452e4f6249fd assets/alchemicalexpansion/models/item/alembic_block.json
 e5cdfc24612c9b45da835b440538d9bed3a8b357 assets/alchemicalexpansion/models/item/belladonna_plant.json
+3891e60ab29d1f9e6af6db82995ba66a7c2e4771 assets/alchemicalexpansion/models/item/potted_belladonna_plant.json

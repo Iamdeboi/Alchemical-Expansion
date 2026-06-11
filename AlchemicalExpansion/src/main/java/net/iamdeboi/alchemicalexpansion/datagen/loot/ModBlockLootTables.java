@@ -26,6 +26,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
     protected void generate() {
         this.dropSelf(ModBlocks.ALEMBIC_BLOCK.get());
         this.dropSelf(ModBlocks.BELLADONNA_PLANT.get());
+        this.add(ModBlocks.POTTED_BELLADONNA.get(), createPotFlowerItemTable(ModBlocks.BELLADONNA_PLANT.get()));
 
 
 

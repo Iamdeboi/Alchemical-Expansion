@@ -8,10 +8,7 @@ import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.FlowerBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -31,6 +28,11 @@ public class ModBlocks {
     public static final RegistryObject<Block> BELLADONNA_PLANT = registerBlock("belladonna_plant",
             () -> new FlowerBlock(() -> MobEffects.POISON, 5,
     BlockBehaviour.Properties.copy(Blocks.DEAD_BUSH).noOcclusion().noCollission()));
+    public static final RegistryObject<Block> POTTED_BELLADONNA = BLOCKS.register("potted_belladonna_plant",
+            () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), ModBlocks.BELLADONNA_PLANT,
+                    BlockBehaviour.Properties.copy(Blocks.POTTED_DEAD_BUSH).noOcclusion()));
+
+
 
     public static final RegistryObject<Block> ALEMBIC_BLOCK = registerBlock("alembic_block",
             () -> new AlembicBlock(BlockBehaviour.Properties.copy(Blocks.COPPER_BLOCK).sound(SoundType.GLASS)));
