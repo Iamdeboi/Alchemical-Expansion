@@ -1,9 +1,13 @@
 package net.iamdeboi.alchemicalexpansion;
 
 import net.iamdeboi.alchemicalexpansion.block.ModBlocks;
+import net.iamdeboi.alchemicalexpansion.block.entity.ModBlockEntities;
 import net.iamdeboi.alchemicalexpansion.item.ModCreativeModeTabs;
 import net.iamdeboi.alchemicalexpansion.item.ModItems;
 import com.mojang.logging.LogUtils;
+import net.iamdeboi.alchemicalexpansion.screen.ModMenuTypes;
+import net.iamdeboi.alchemicalexpansion.screen.MortarAndPestleScreen;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FlowerBlock;
@@ -36,6 +40,12 @@ public class AlchemicalExpansion {
         ModItems.register(modEventBus);
         // Register ModBlocks Registry
         ModBlocks.register(modEventBus);
+
+        // Register ModBlockEntities Registry
+        ModBlockEntities.register(modEventBus);
+
+        // Register ModMenu Registry
+        ModMenuTypes.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -71,7 +81,7 @@ public class AlchemicalExpansion {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-
+            MenuScreens.register(ModMenuTypes.MORTAR_AND_PESTLE_MENU.get(), MortarAndPestleScreen::new);
         }
     }
 

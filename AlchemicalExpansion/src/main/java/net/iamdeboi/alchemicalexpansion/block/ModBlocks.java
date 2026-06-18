@@ -39,7 +39,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> ALEMBIC_BLOCK = registerBlock("alembic_block",
             () -> new AlembicBlock(BlockBehaviour.Properties.copy(Blocks.COPPER_BLOCK).sound(SoundType.GLASS)));
     public static final RegistryObject<Block> MORTAR_AND_PESTLE_BLOCK = registerBlock("mortar_and_pestle_block",
-            () -> new MortarAndPestleBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.BONE_BLOCK)));
+            () -> new MortarAndPestleBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).noOcclusion().sound(SoundType.BONE_BLOCK)));
 
 
 

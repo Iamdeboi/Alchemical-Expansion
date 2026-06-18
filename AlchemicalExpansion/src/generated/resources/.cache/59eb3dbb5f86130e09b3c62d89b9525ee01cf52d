@@ -1,4 +1,5 @@
-// 1.20.1	2026-06-11T16:13:49.0853585	Loot Tables
+// 1.20.1	2026-06-18T17:22:54.6918702	Loot Tables
 5fac6144b14104405ca3f3ac46e99d5f505b3524 data/alchemicalexpansion/loot_tables/blocks/alembic_block.json
 3306ebe323855b7c4800745a743f33dabb899b57 data/alchemicalexpansion/loot_tables/blocks/belladonna_plant.json
+dc9bbc3bf4dc0e9fe9035a5ea63b2c093a672c3b data/alchemicalexpansion/loot_tables/blocks/mortar_and_pestle_block.json
 da93b145c9ba3ba6dfa61ec758fcfb798a6ee9d6 data/alchemicalexpansion/loot_tables/blocks/potted_belladonna_plant.json

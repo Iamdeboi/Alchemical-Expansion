@@ -2,16 +2,16 @@
 	"format_version": "1.9.0",
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "mortar_texture",
-		"1": "pestle_texture",
-		"particle": "mortar_texture"
+		"0": "alchemicalexpansion:block/mortar_texture",
+		"1": "alchemicalexpansion:block/pestle_texture",
+		"particle": "alchemicalexpansion:block/mortar_texture"
 	},
 	"elements": [
 		{
 			"name": "base",
 			"from": [6, 0, 5],
 			"to": [12, 1, 11],
-			"rotation": {"angle": 0, "axis": "y", "origin": [6, 0, 5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [5, 0, 5]},
 			"faces": {
 				"north": {"uv": [6, 2, 9, 2.5], "texture": "#0"},
 				"east": {"uv": [6, 2.5, 9, 3], "texture": "#0"},
@@ -24,7 +24,7 @@
 		{
 			"from": [5, 1, 5],
 			"to": [6, 3, 11],
-			"rotation": {"angle": 0, "axis": "y", "origin": [6, 0, 9]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [5, 0, 9]},
 			"faces": {
 				"north": {"uv": [4.5, 7, 5, 8], "texture": "#0"},
 				"east": {"uv": [3, 2, 6, 3], "texture": "#0"},
@@ -37,7 +37,7 @@
 		{
 			"from": [12, 1, 5],
 			"to": [13, 3, 11],
-			"rotation": {"angle": 0, "axis": "y", "origin": [13, 0, 9]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [12, 0, 9]},
 			"faces": {
 				"north": {"uv": [5, 7, 5.5, 8], "texture": "#0"},
 				"east": {"uv": [3, 0, 6, 1], "texture": "#0"},
@@ -50,7 +50,7 @@
 		{
 			"from": [6, 1, 11],
 			"to": [12, 3, 12],
-			"rotation": {"angle": 0, "axis": "y", "origin": [10, 0, 11]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [9, 0, 11]},
 			"faces": {
 				"north": {"uv": [0, 6, 3, 7], "texture": "#0"},
 				"east": {"uv": [7, 5.5, 7.5, 6.5], "texture": "#0"},
@@ -63,7 +63,7 @@
 		{
 			"from": [6, 1, 4],
 			"to": [12, 3, 5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [10, 0, 4]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [9, 0, 4]},
 			"faces": {
 				"north": {"uv": [3, 0, 6, 1], "texture": "#0"},
 				"east": {"uv": [7, 3.5, 7.5, 4.5], "texture": "#0"},
@@ -77,7 +77,6 @@
 			"name": "pestlebottom",
 			"from": [2, 0, 5],
 			"to": [3, 1, 7],
-			"rotation": {"angle": 0, "axis": "y", "origin": [1, 0, 0]},
 			"faces": {
 				"north": {"uv": [4, 2, 5, 3], "texture": "#1"},
 				"east": {"uv": [2, 2, 4, 3], "texture": "#1"},
@@ -91,7 +90,7 @@
 			"name": "handle",
 			"from": [2, 0, 7],
 			"to": [3, 1, 11],
-			"rotation": {"angle": 0, "axis": "y", "origin": [2, 0, 5]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [1, 0, 5]},
 			"faces": {
 				"north": {"uv": [4, 3, 5, 4], "texture": "#1"},
 				"east": {"uv": [0, 0, 4, 1], "texture": "#1"},
@@ -114,6 +113,9 @@
 		},
 		"firstperson_lefthand": {
 			"translation": [0, 8, 0]
+		},
+		"ground": {
+			"translation": [0, 6, 0]
 		},
 		"gui": {
 			"rotation": [30, 45, 0],
