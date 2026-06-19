@@ -24,6 +24,14 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.BELLADONNA);
         simpleItem(ModItems.ESSENCE_CONTAINER);
 
+        simpleItem(ModItems.AQUATIC_POWDER);
+        simpleItem(ModItems.ARTHROPOD_POWDER);
+        simpleItem(ModItems.BOTANICAL_POWDER);
+        simpleItem(ModItems.ENDER_POWDER);
+        simpleItem(ModItems.FLESHY_POWDER);
+        simpleItem(ModItems.GLITTERING_POWDER);
+        simpleItem(ModItems.NETHERBOUND_POWDER);
+
         simpleBlockItemBlockTexture(ModBlocks.BELLADONNA_PLANT);
     }
 

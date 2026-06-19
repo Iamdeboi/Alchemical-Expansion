@@ -1,5 +1,12 @@
-// 1.20.1	2026-06-11T15:59:52.1954253	Item Models: alchemicalexpansion
+// 1.20.1	2026-06-18T20:31:15.6120787	Item Models: alchemicalexpansion
 49a1dbca8306189ccdcb3dc27f0b5a57448e0f6e assets/alchemicalexpansion/models/item/alchemical_bolus.json
+b8489e1a6f8085ed498822ed6905b4da197b188f assets/alchemicalexpansion/models/item/aquatic_powder.json
+fbd2132b7b0ef1fed180d33e1d90bd49b6e01760 assets/alchemicalexpansion/models/item/arthropod_powder.json
 fffc1973976a8ef321d81e6dddcb95099123ffc3 assets/alchemicalexpansion/models/item/belladonna.json
 c7f76422e4646096d354170076b18d996fe441c8 assets/alchemicalexpansion/models/item/belladonna_plant.json
+17b22fdea43ab3c364b6dd4630c3a79cf6ef1ce7 assets/alchemicalexpansion/models/item/botanical_powder.json
+d3195c1983749620ebbc9004ba443ae153a3ddd7 assets/alchemicalexpansion/models/item/ender_powder.json
 da3f429ebb7e747fffb86d48eb306cd6d73470f3 assets/alchemicalexpansion/models/item/essence_container.json
+337a4ba5c0f30b5fe0bd3a90d207e05a16c46fad assets/alchemicalexpansion/models/item/fleshy_powder.json
+cff6f56858a2f80c4dcfdbabd20d859d269c8d30 assets/alchemicalexpansion/models/item/glittering_powder.json
+2cb0ea4301e62f0a49b078b9694c1696e61b161c assets/alchemicalexpansion/models/item/netherbound_powder.json

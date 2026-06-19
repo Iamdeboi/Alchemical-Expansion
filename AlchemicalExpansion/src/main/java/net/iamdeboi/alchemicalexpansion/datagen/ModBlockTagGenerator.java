@@ -35,7 +35,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         //this.tag(ModTags.Items.ALCHEMICAL_INGREDIENTS);
 
         // Mineable with Tools Tags
-        this.tag(BlockTags.MINEABLE_WITH_AXE);
+        this.tag(BlockTags.MINEABLE_WITH_AXE)
+                .add(ModBlocks.MORTAR_AND_PESTLE_BLOCK.get());
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.ALEMBIC_BLOCK.get());
         this.tag(BlockTags.MINEABLE_WITH_SHOVEL);

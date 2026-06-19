@@ -3,6 +3,14 @@
   "item.alchemicalexpansion.essence_container": "Essence Container",
   "item.alchemicalexpansion.belladonna": "Belladonna",
 
+  "item.alchemicalexpansion.aquatic_powder": "Aquatic Powder",
+  "item.alchemicalexpansion.arthropod_powder": "Arthropod Powder",
+  "item.alchemicalexpansion.botanical_powder": "Botanical Powder",
+  "item.alchemicalexpansion.ender_powder": "Ender Powder",
+  "item.alchemicalexpansion.fleshy_powder": "Fleshy Powder",
+  "item.alchemicalexpansion.glittering_powder": "Glittering Powder",
+  "item.alchemicalexpansion.netherbound_powder": "Netherbound Powder",
+
   "block.alchemicalexpansion.belladonna_plant": "Belladonna Plant",
   "block.alchemicalexpansion.alembic_block": "Alembic",
   "block.alchemicalexpansion.mortar_and_pestle_block": "Mortar and Pestle",

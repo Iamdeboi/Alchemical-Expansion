@@ -22,6 +22,14 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.ESSENCE_CONTAINER.get());
                         pOutput.accept(ModItems.BELLADONNA.get());
 
+                        pOutput.accept(ModItems.AQUATIC_POWDER.get());
+                        pOutput.accept(ModItems.ARTHROPOD_POWDER.get());
+                        pOutput.accept(ModItems.BOTANICAL_POWDER.get());
+                        pOutput.accept(ModItems.ENDER_POWDER.get());
+                        pOutput.accept(ModItems.FLESHY_POWDER.get());
+                        pOutput.accept(ModItems.GLITTERING_POWDER.get());
+                        pOutput.accept(ModItems.NETHERBOUND_POWDER.get());
+
                         pOutput.accept(ModBlocks.BELLADONNA_PLANT.get());
 
                         pOutput.accept(ModBlocks.ALEMBIC_BLOCK.get());
