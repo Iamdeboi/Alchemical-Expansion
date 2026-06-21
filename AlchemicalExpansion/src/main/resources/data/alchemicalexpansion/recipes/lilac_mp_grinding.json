@@ -1,0 +1,12 @@
+{
+  "type": "alchemicalexpansion:mortar_and_pestle_grinding",
+  "ingredients": [
+    {
+      "item": "minecraft:lilac"
+    }
+  ],
+  "output": {
+    "count": 3,
+    "item": "minecraft:magenta_dye"
+  }
+}

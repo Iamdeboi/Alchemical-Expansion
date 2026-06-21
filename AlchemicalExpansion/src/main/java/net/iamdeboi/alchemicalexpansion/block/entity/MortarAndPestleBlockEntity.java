@@ -1,6 +1,7 @@
 package net.iamdeboi.alchemicalexpansion.block.entity;
 
 import net.iamdeboi.alchemicalexpansion.item.ModItems;
+import net.iamdeboi.alchemicalexpansion.recipe.MortarAndPestleGrindingRecipe;
 import net.iamdeboi.alchemicalexpansion.screen.MortarAndPestleMenu;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -27,6 +28,8 @@ import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+
+import java.util.Optional;
 
 public class MortarAndPestleBlockEntity extends BlockEntity implements MenuProvider {
     private final ItemStackHandler itemHandler = new ItemStackHandler(18);
@@ -141,7 +144,9 @@ public class MortarAndPestleBlockEntity extends BlockEntity implements MenuProvi
     }
 
     private void craftItem() {
-        ItemStack result = new ItemStack(ModItems.ALCHEMICAL_BOLUS.get(), 1);
+        Optional<MortarAndPestleGrindingRecipe> recipe = getCurrentRecipe();
+        ItemStack result = recipe.get().getResultItem(null);
+
         this.itemHandler.extractItem(INPUT_SLOT, 1, false);
 
         this.itemHandler.setStackInSlot(OUTPUT_SLOT, new ItemStack(result.getItem(),
@@ -157,10 +162,23 @@ public class MortarAndPestleBlockEntity extends BlockEntity implements MenuProvi
     }
 
     private boolean hasRecipe() {
-        boolean hasCraftingItem = this.itemHandler.getStackInSlot(INPUT_SLOT).getItem() == ModItems.BELLADONNA.get();
-        ItemStack result = new ItemStack(ModItems.ALCHEMICAL_BOLUS.get());
+        Optional<MortarAndPestleGrindingRecipe> recipe = getCurrentRecipe();
 
-        return hasCraftingItem && canInsertAmountIntoOutputSlot(result.getCount()) && canInsertItemIntoOutputSlot(result.getItem());
+        if(recipe.isEmpty()) {
+            return false;
+        }
+        ItemStack result = recipe.get().getResultItem(null);
+
+        return canInsertAmountIntoOutputSlot(result.getCount()) && canInsertItemIntoOutputSlot(result.getItem());
+    }
+
+    private Optional<MortarAndPestleGrindingRecipe> getCurrentRecipe() {
+        SimpleContainer inventory = new SimpleContainer(this.itemHandler.getSlots());
+        for (int i = 0; i < itemHandler.getSlots(); i++) {
+            inventory.setItem(i, this.itemHandler.getStackInSlot(i));
+        }
+
+        return this.level.getRecipeManager().getRecipeFor(MortarAndPestleGrindingRecipe.Type.INSTANCE, inventory, level);
     }
 
     private boolean canInsertItemIntoOutputSlot(Item item) {

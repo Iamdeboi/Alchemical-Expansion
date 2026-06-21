@@ -5,6 +5,7 @@ import net.iamdeboi.alchemicalexpansion.block.entity.ModBlockEntities;
 import net.iamdeboi.alchemicalexpansion.item.ModCreativeModeTabs;
 import net.iamdeboi.alchemicalexpansion.item.ModItems;
 import com.mojang.logging.LogUtils;
+import net.iamdeboi.alchemicalexpansion.recipe.ModRecipes;
 import net.iamdeboi.alchemicalexpansion.screen.ModMenuTypes;
 import net.iamdeboi.alchemicalexpansion.screen.MortarAndPestleScreen;
 import net.minecraft.client.gui.screens.MenuScreens;
@@ -46,6 +47,9 @@ public class AlchemicalExpansion {
 
         // Register ModMenu Registry
         ModMenuTypes.register(modEventBus);
+
+        // Register ModRecipes Registry
+        ModRecipes.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

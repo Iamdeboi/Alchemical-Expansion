@@ -1,0 +1,12 @@
+{
+  "type": "alchemicalexpansion:mortar_and_pestle_grinding",
+  "ingredients": [
+    {
+      "item": "minecraft:oxeye_daisy"
+    }
+  ],
+  "output": {
+    "count": 3,
+    "item": "minecraft:light_gray_dye"
+  }
+}

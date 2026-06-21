@@ -1,0 +1,12 @@
+{
+  "type": "alchemicalexpansion:mortar_and_pestle_grinding",
+  "ingredients": [
+    {
+      "item": "minecraft:amethyst_cluster"
+    }
+  ],
+  "output": {
+    "count": 3,
+    "item": "minecraft:amethyst_shard"
+  }
+}

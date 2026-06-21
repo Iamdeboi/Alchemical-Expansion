@@ -1,0 +1,12 @@
+{
+  "type": "alchemicalexpansion:mortar_and_pestle_grinding",
+  "ingredients": [
+    {
+      "item": "minecraft:bone"
+    }
+  ],
+  "output": {
+    "count": 5,
+    "item": "minecraft:bone_meal"
+  }
+}
