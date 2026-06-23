@@ -2,11 +2,11 @@
   "type": "alchemicalexpansion:mortar_and_pestle_grinding",
   "ingredients": [
     {
-      "item": "minecraft:eye_of_ender"
+      "item": "minecraft:golden_apple"
     }
   ],
   "output": {
     "count": 1,
-    "item": "alchemicalexpansion:ender_powder"
+    "item": "alchemicalexpansion:glittering_powder"
   }
 }

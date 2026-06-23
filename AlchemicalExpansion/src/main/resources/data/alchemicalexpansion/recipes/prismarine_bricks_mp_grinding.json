@@ -1,0 +1,12 @@
+{
+  "type": "alchemicalexpansion:mortar_and_pestle_grinding",
+  "ingredients": [
+    {
+      "item": "minecraft:prismarine_bricks"
+    }
+  ],
+  "output": {
+    "count": 4,
+    "item": "minecraft:prismarine_shard"
+  }
+}

@@ -29,6 +29,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.FLESHY_POWDER.get());
                         pOutput.accept(ModItems.GLITTERING_POWDER.get());
                         pOutput.accept(ModItems.NETHERBOUND_POWDER.get());
+                        pOutput.accept(ModItems.SPORE_POWDER.get());
 
                         pOutput.accept(ModBlocks.BELLADONNA_PLANT.get());
 

@@ -1,0 +1,12 @@
+{
+  "type": "alchemicalexpansion:mortar_and_pestle_grinding",
+  "ingredients": [
+    {
+      "item": "minecraft:spore_blossom"
+    }
+  ],
+  "output": {
+    "count": 1,
+    "item": "alchemicalexpansion:spore_powder"
+  }
+}

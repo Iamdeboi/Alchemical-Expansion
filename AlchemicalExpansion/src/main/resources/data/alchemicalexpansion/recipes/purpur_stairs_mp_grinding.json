@@ -1,0 +1,12 @@
+{
+  "type": "alchemicalexpansion:mortar_and_pestle_grinding",
+  "ingredients": [
+    {
+      "item": "minecraft:purpur_stairs"
+    }
+  ],
+  "output": {
+    "count": 1,
+    "item": "alchemicalexpansion:ender_powder"
+  }
+}

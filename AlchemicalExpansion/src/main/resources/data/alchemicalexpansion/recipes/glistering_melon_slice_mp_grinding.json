@@ -1,0 +1,12 @@
+{
+  "type": "alchemicalexpansion:mortar_and_pestle_grinding",
+  "ingredients": [
+    {
+      "item": "minecraft:glistering_melon_slice"
+    }
+  ],
+  "output": {
+    "count": 1,
+    "item": "alchemicalexpansion:glittering_powder"
+  }
+}

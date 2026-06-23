@@ -28,7 +28,8 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.ENDER_POWDER.get())
                 .add(ModItems.FLESHY_POWDER.get())
                 .add(ModItems.GLITTERING_POWDER.get())
-                .add(ModItems.NETHERBOUND_POWDER.get());
+                .add(ModItems.NETHERBOUND_POWDER.get())
+                .add(ModItems.SPORE_POWDER.get());
 
     }
 }

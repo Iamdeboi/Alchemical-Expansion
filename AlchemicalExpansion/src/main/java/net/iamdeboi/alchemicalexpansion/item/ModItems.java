@@ -32,6 +32,9 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> NETHERBOUND_POWDER = ITEMS.register("netherbound_powder",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> SPORE_POWDER = ITEMS.register("spore_powder",
+            () -> new Item(new Item.Properties()));
+
 
 
     public static void register(IEventBus eventBus) {

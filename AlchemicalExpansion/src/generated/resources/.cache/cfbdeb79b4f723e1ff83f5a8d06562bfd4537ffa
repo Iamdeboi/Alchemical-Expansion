@@ -1,4 +1,4 @@
-// 1.20.1	2026-06-18T20:31:15.6120787	Item Models: alchemicalexpansion
+// 1.20.1	2026-06-22T21:13:16.3604597	Item Models: alchemicalexpansion
 49a1dbca8306189ccdcb3dc27f0b5a57448e0f6e assets/alchemicalexpansion/models/item/alchemical_bolus.json
 b8489e1a6f8085ed498822ed6905b4da197b188f assets/alchemicalexpansion/models/item/aquatic_powder.json
 fbd2132b7b0ef1fed180d33e1d90bd49b6e01760 assets/alchemicalexpansion/models/item/arthropod_powder.json
@@ -10,3 +10,4 @@ da3f429ebb7e747fffb86d48eb306cd6d73470f3 assets/alchemicalexpansion/models/item/
 337a4ba5c0f30b5fe0bd3a90d207e05a16c46fad assets/alchemicalexpansion/models/item/fleshy_powder.json
 cff6f56858a2f80c4dcfdbabd20d859d269c8d30 assets/alchemicalexpansion/models/item/glittering_powder.json
 2cb0ea4301e62f0a49b078b9694c1696e61b161c assets/alchemicalexpansion/models/item/netherbound_powder.json
+f8ec865f31c8e21760e933b3154e49ce934569af assets/alchemicalexpansion/models/item/spore_powder.json

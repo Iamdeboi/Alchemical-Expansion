@@ -31,6 +31,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.FLESHY_POWDER);
         simpleItem(ModItems.GLITTERING_POWDER);
         simpleItem(ModItems.NETHERBOUND_POWDER);
+        simpleItem(ModItems.SPORE_POWDER);
 
         simpleBlockItemBlockTexture(ModBlocks.BELLADONNA_PLANT);
     }
