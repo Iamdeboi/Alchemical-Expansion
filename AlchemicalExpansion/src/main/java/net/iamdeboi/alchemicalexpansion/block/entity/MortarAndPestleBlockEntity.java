@@ -167,6 +167,7 @@ public class MortarAndPestleBlockEntity extends BlockEntity implements MenuProvi
         if(recipe.isEmpty()) {
             return false;
         }
+
         ItemStack result = recipe.get().getResultItem(null);
 
         return canInsertAmountIntoOutputSlot(result.getCount()) && canInsertItemIntoOutputSlot(result.getItem());

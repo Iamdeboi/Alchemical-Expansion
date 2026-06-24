@@ -2,6 +2,8 @@ package net.iamdeboi.alchemicalexpansion;
 
 import net.iamdeboi.alchemicalexpansion.block.ModBlocks;
 import net.iamdeboi.alchemicalexpansion.block.entity.ModBlockEntities;
+import net.iamdeboi.alchemicalexpansion.effect.FortunateEffect;
+import net.iamdeboi.alchemicalexpansion.effect.ModEffects;
 import net.iamdeboi.alchemicalexpansion.item.ModCreativeModeTabs;
 import net.iamdeboi.alchemicalexpansion.item.ModItems;
 import com.mojang.logging.LogUtils;
@@ -9,6 +11,8 @@ import net.iamdeboi.alchemicalexpansion.recipe.ModRecipes;
 import net.iamdeboi.alchemicalexpansion.screen.ModMenuTypes;
 import net.iamdeboi.alchemicalexpansion.screen.MortarAndPestleScreen;
 import net.minecraft.client.gui.screens.MenuScreens;
+import net.minecraft.world.effect.MobEffect;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FlowerBlock;
@@ -16,6 +20,7 @@ import net.minecraft.world.level.block.FlowerPotBlock;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
+import net.minecraftforge.event.level.BlockEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -51,6 +56,9 @@ public class AlchemicalExpansion {
         // Register ModRecipes Registry
         ModRecipes.register(modEventBus);
 
+        //Register ModEffects Registry
+        ModEffects.register(modEventBus);
+
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
@@ -80,6 +88,16 @@ public class AlchemicalExpansion {
     public void onServerStarting(ServerStartingEvent event) {
 
     }
+
+   // @SubscribeEvent
+    //public void onBlockBreak(BlockEvent.BreakEvent event) {
+        //Player player = event.getPlayer();
+
+        // Check if the player currently has the "Fortunate" effect active
+        //if (player.hasEffect(ModEffects.FORTUNATE_EFFECT.ef)) {
+            //return;
+        //}
+    //}
 
     @Mod.EventBusSubscriber(modid = MODID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents {
