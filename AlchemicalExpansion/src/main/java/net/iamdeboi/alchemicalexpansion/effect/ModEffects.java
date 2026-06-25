@@ -21,8 +21,6 @@ public class ModEffects {
 
     public static final RegistryObject<MobEffect> SPIDERS_CLIMB_EFFECT = MOB_EFFECTS.register("spiders_climb",
             () -> new SpidersClimbEffect(MobEffectCategory.NEUTRAL, 0xff3737));
-                    //.addAttributeModifier(Attributes.MOVEMENT_SPEED, String.valueOf(UUID.randomUUID()), -0.20F, AttributeModifier.Operation.MULTIPLY_TOTAL));
-
 
 
 

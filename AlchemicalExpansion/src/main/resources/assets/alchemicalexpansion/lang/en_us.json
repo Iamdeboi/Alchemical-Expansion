@@ -12,6 +12,10 @@
   "item.alchemicalexpansion.netherbound_powder": "Netherbound Powder",
   "item.alchemicalexpansion.spore_powder": "Spore Powder",
 
+  "item.minecraft.potion.effect.spiders_climb_potion": "Spider's Climb Potion",
+  "item.minecraft.splash_potion.effect.spiders_climb_potion": "Spider's Climb Splash Potion",
+  "item.minecraft.lingering_potion.effect.spiders_climb_potion": "Spider's Climb Lingering Potion",
+
   "block.alchemicalexpansion.belladonna_plant": "Belladonna Plant",
   "block.alchemicalexpansion.alembic_block": "Alembic",
   "block.alchemicalexpansion.mortar_and_pestle_block": "Mortar and Pestle",
