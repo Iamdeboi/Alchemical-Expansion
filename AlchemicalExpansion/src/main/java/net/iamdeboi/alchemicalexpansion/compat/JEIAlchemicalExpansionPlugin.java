@@ -28,6 +28,9 @@ public class JEIAlchemicalExpansionPlugin implements IModPlugin {
     public static final RecipeType<AEPotionBrewingRecipeWrapper> SPIDERS_CLIMB_POTION_RECIPE =
             new RecipeType<>(new ResourceLocation(AlchemicalExpansion.MODID, "spiders_climb_potion"),
                     AEPotionBrewingRecipeWrapper.class);
+    public static final RecipeType<AEPotionBrewingRecipeWrapper> FORTUNATE_POTION_RECIPE =
+            new RecipeType<>(new ResourceLocation(AlchemicalExpansion.MODID, "fortunate_potion"),
+                    AEPotionBrewingRecipeWrapper.class);
 
     @Override
     public ResourceLocation getPluginUid() {
@@ -50,9 +53,8 @@ public class JEIAlchemicalExpansionPlugin implements IModPlugin {
         List recipes = new ArrayList<>();
 
         // Spider's Climb:
-        recipes.add(new AEPotionBrewingRecipeWrapper(
-                new AEPotionBrewingRecipe(Potions.AWKWARD, ModItems.ARTHROPOD_POWDER.get(), ModPotions.SPIDERS_CLIMB_POTION.get()
-        )));
+        recipes.add(new AEPotionBrewingRecipeWrapper(new AEPotionBrewingRecipe(Potions.AWKWARD, ModItems.ARTHROPOD_POWDER.get(), ModPotions.SPIDERS_CLIMB_POTION.get())));
+
 
         // Add the list of recipes after iterating over all possible recipes above:
         registration.addRecipes(SPIDERS_CLIMB_POTION_RECIPE, recipes);

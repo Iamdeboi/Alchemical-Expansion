@@ -72,6 +72,7 @@ public class AlchemicalExpansion {
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.BELLADONNA_PLANT.getId(), ModBlocks.POTTED_BELLADONNA);
 
             BrewingRecipeRegistry.addRecipe(new AEPotionBrewingRecipe(Potions.AWKWARD, ModItems.ARTHROPOD_POWDER.get(), ModPotions.SPIDERS_CLIMB_POTION.get()));
+            BrewingRecipeRegistry.addRecipe(new AEPotionBrewingRecipe(Potions.AWKWARD, ModItems.GLITTERING_POWDER.get(), ModPotions.FORTUNATE_POTION.get()));
 
         });
     }

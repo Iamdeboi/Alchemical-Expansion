@@ -6,6 +6,9 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.alchemy.Potion;
 import net.minecraft.world.item.alchemy.PotionUtils;
 import net.minecraftforge.common.brewing.IBrewingRecipe;
+import org.jetbrains.annotations.Nullable;
+
+import java.util.List;
 
 public class AEPotionBrewingRecipe implements IBrewingRecipe {
     private final Potion inputPotion;
@@ -39,5 +42,4 @@ public class AEPotionBrewingRecipe implements IBrewingRecipe {
         PotionUtils.setPotion(itemStack, this.outputPotion);
         return itemStack;
     }
-
 }

@@ -12,4 +12,5 @@ public class AEPotionBrewingRecipeWrapper {
     public AEPotionBrewingRecipe getRecipe() {
         return recipe;
     }
+
 }
