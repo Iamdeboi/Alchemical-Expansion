@@ -76,7 +76,7 @@ public class MortarAndPestleBlock extends BaseEntityBlock {
                 (pLevel1, pPos, pState1, pBlockEntity) -> pBlockEntity.tick(pLevel1,pPos,pState1));
     }
 
-    @Override //FIX BEFORE STARTING UP CLIENT!
+    @Override
     public @Nullable BlockEntity newBlockEntity(BlockPos pPos, BlockState pState) {
         return new MortarAndPestleBlockEntity(pPos,pState);
     }
